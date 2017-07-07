@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_margin="@dimen/px20"
+    android:layout_height="wrap_content"
+    android:addStatesFromChildren="true"
+    android:descendantFocusability="blocksDescendants">
+
+    <com.zzb.qinzhusocial.view.RoundImageView
+        android:id="@+id/img_portrait"
+        android:layout_width="@dimen/px100"
+        android:layout_height="@dimen/px100"
+        android:src="@mipmap/icon"/>
+
+    <TextView android:id="@+id/tv_friendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px60"
+        android:layout_marginLeft="@dimen/px30"
+        android:text="姓名"/>
+
+    <Button android:id="@+id/btn_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px120"
+        android:text="同意"/>
+
+    <Button android:id="@+id/btn_refuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拒绝"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

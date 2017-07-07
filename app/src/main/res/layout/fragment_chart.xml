@@ -1,0 +1,26 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zzb.qinzhusocial.fragment.ChartFragment">
+
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarTitle="聊天室"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:id="@+id/tv_room"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/px20"
+        android:text="聊天室  id:20975036989441"
+        android:paddingLeft="@dimen/px30"
+        android:background="@drawable/ease_mm_listitem"
+        android:clickable="true"
+        android:textSize="@dimen/px40"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

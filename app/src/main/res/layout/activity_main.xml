@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzb.qinzhusocial.activity.MainActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sel_message"
+            android:gravity="center"
+            android:textColor="@color/sel_selected_false"
+            android:text="会话" />
+
+        <TextView android:id="@+id/tv_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sel_person"
+            android:gravity="center"
+            android:textColor="@color/sel_selected_false"
+            android:text="通讯录" />
+
+        <TextView android:id="@+id/tv_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sel_chart"
+            android:gravity="center"
+            android:textColor="@color/sel_selected_false"
+            android:text="聊天室" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

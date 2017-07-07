@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ease_mm_listitem"
+        android:duplicateParentState="true">
+
+        <com.hyphenate.easeui.widget.EaseImageView
+            android:id="@+id/avatar"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ease_default_avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="11dp"
+            android:layout_toLeftOf="@+id/unread_msg_number"
+            android:layout_toRightOf="@id/avatar"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px25" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="加个好友呗"
+                    android:textColor="#8C8C8C"
+                    android:textSize="@dimen/px20" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_agree"
+            android:layout_width="@dimen/px120"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px20"
+            android:text="同意"/>
+
+        <TextView android:id="@+id/tv_agree"
+            android:layout_width="@dimen/px120"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px20"
+            android:visibility="gone"
+            android:text="已同意"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

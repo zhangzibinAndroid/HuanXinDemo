@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.zzb.qinzhusocial.activity.AddFriendsActivity">
+
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarTitle="添加好友"/>
+
+    <EditText android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_margin="@dimen/px20"
+        android:background="@drawable/shape_border"
+        android:hint="请输入好友ID"/>
+
+    <Button android:id="@+id/btn_addFriend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_margin="@dimen/px20"
+        android:background="@drawable/btn_select"
+        android:text="添加"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
