@@ -222,10 +222,6 @@ public class MainActivity extends AppCompatActivity {
                 && event.getAction() == KeyEvent.ACTION_DOWN) {
             if ((System.currentTimeMillis() - exitTime) > 2000) {//两秒内再次点击返回则退出
                 Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
-                tv_icon[0].setSelected(true);
-                tv_icon[0].setTextColor(getResources().getColor(R.color.sel_selected_true));
-                setReplaceFragment(easeConversationListFragment);
-
                 exitTime = System.currentTimeMillis();
             } else {
                 EMClient.getInstance().logout(true);
